@@ -1,0 +1,29 @@
+{
+  "name": "spareparts/visual-recorder",
+  "description": "Visual testing & tests walk-through recording",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ondrej Hatala",
+      "email": "ondriq.h@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-imagick": "*",
+    "codeception/codeception": ">=4",
+    "codeception/module-webdriver": ">=1.0",
+    "symfony/process": "^5.1",
+    "symfony/console": "^5.1",
+    "php-di/php-di": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "SpareParts\\VisualRecorder\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/comparer"
+  ]
+}
